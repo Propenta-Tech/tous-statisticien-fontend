@@ -1,0 +1,10 @@
+{
+  "name": "Tous Statisticien Academy",
+  "short_name": "TSA",
+  "description": "Plateforme e-learning pour la préparation aux concours de bourses",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1e293b",
+  "theme_color": "#fbbf24",
+  "icons": []
+}
