@@ -2,6 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Base styles aligned with the platform's design system */
+html, body {
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Selection color following primary accent */
+::selection {
+  background: rgba(251, 191, 36, 0.25); /* amber-400 @ 25% */
+  color: #1e293b; /* primary navy */
+}
+
+/* Scrollbar minimal styling (hidden utility provided in Tailwind plugin too) */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb { background-color: rgba(148, 163, 184, 0.5); border-radius: 9999px; }
+::-webkit-scrollbar-track { background-color: transparent; }
+
+/* Cards and surfaces helpers */
+@layer components {
+  .surface {
+    @apply bg-white rounded-xl shadow-soft border border-gray-200;
+  }
+  .surface-dark {
+    @apply bg-gray-800 rounded-xl shadow-soft border border-gray-700;
+  }
+}
+
+/* Typography tweaks */
+h1, h2, h3, h4, h5, h6 { @apply tracking-tight; }
+p { @apply leading-relaxed; }
+
+/* Dark mode base */
+.dark body { @apply bg-gray-900 text-gray-100; }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --background: #ffffff;
   --foreground: #171717;

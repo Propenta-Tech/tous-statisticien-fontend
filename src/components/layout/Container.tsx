@@ -1,11 +1,18 @@
-"use client"
-// Container - À développer
+"use client";
+
+import React from 'react';
+
 interface ContainerProps {
-  // Props à définir
+  children: React.ReactNode;
+  className?: string;
 }
 
-export const Container: React.FC<ContainerProps> = (props) => {
-  return <div>Container</div>
-}
+export const Container: React.FC<ContainerProps> = ({ children, className }) => {
+  return (
+    <div className={`mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 ${className || ''}`}>
+      {children}
+    </div>
+  );
+};
 
-export { Container }
+export {};
