@@ -1,4 +1,6 @@
-// Dashboard étudiant
+import React from 'react';
+import { StudentDashboard } from '@/components/dashboard/StudentDashboard';
+
 export default function StudentDashboardPage() {
-  return <div>Dashboard étudiant</div>
+  return <StudentDashboard />;
 }

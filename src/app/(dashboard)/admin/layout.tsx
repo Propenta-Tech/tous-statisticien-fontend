@@ -1,4 +1,10 @@
-// Layout admin
+import React from 'react';
+import { AdminGuard } from '@/lib/auth/guards';
+
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
-  return <div>{children}</div>
+  return (
+    <AdminGuard>
+      {children}
+    </AdminGuard>
+  );
 }
