@@ -7,5 +7,3 @@ interface AreaChartProps {
 export const AreaChart: React.FC<AreaChartProps> = (props) => {
   return <div>AreaChart</div>
 }
-
-export { AreaChart }

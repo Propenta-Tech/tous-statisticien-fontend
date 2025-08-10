@@ -7,5 +7,3 @@ interface BarChartProps {
 export const BarChart: React.FC<BarChartProps> = (props) => {
   return <div>BarChart</div>
 }
-
-export { BarChart }
